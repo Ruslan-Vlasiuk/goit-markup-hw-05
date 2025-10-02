@@ -62,6 +62,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <!-- hero -->
       <section class="hero">
@@ -487,5 +488,70 @@
         </div>
       </div>
     </footer>
+
+    <!-- !MODAL WINDOW -->
+    <div class="modal">
+      <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+      <button type="button" class="modal-close-btn">X</button>
+      <form class="modal-form">
+        <label class="modal-lable" for="username">
+          Name
+          <input
+            class="modal-input"
+            type="text"
+            name="username"
+            id="username"
+            required
+          />
+        </label>
+
+        <label class="modal-lable" for="user-phone">
+          Phone
+          <input
+            class="modal-input"
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            required
+          />
+        </label>
+
+        <label class="modal-lable" for="user-email">
+          Email
+          <input
+            class="modal-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            required
+          />
+        </label>
+
+        <label class="modal-lable" for="user-comment">
+          Comment
+          <textarea
+            class="modal-textarea"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Text input"
+          ></textarea>
+        </label>
+
+        <div class="checkbox-wrapper">
+          <input
+            class="modal-checkbox"
+            type="checkbox"
+            name="policy"
+            required
+          />
+          <p class="policy-text">
+            I accept the terms and conditions of the
+            <a href="" class="policy-link">Privacy Policy</a>
+          </p>
+        </div>
+
+        <button class="mobal-btn" type="submit">Send</button>
+      </form>
+    </div>
   </body>
 </html>
