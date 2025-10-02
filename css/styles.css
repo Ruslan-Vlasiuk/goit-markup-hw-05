@@ -485,11 +485,27 @@ main {
   margin-bottom: 16px;
 }
 .modal-close-btn {
-  position: absolute;
+  border-radius: 100%;
+  fill: var(--cornflower);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
   top: 24px;
   right: 24px;
-  background: transparent;
-  border: none;
+}
+
+.close-icon {
+  fill: var(--navy-blue);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border-radius: 100%;
+  fill: var(--ocean);
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  fill: var(--white);
 }
 .modal-lable {
   display: block;
@@ -516,6 +532,7 @@ main {
   resize: none;
   margin-top: 4px;
   margin-bottom: 16px;
+  padding: 8px 16px;
 }
 .checkbox-wrapper {
   display: flex;
@@ -538,9 +555,10 @@ main {
   text-decoration-skip-ink: none;
   color: var(--iris);
 }
-.mobal-btn {
+.modal-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 4px;
   width: 169px;
   height: 56px;
@@ -554,4 +572,13 @@ main {
   letter-spacing: 0.04em;
   text-align: center;
   color: var(--white);
+}
+.modal-icon {
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-wrapper {
+  position: relative;
 }
